@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Электронный билет</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="ticket-card">
+            <!-- Заголовок -->
+            <div class="company-header">
+                <h1>АО Экспресс-пригород</h1>
+            </div>
+
+            <!-- Заголовок билета -->
+            <div class="ticket-title">
+                <h2>Билет</h2>
+            </div>
+
+            <!-- Информация о билете -->
+            <div class="ticket-info">
+                <div class="info-row">
+                    <div class="info-label">Дата поездки</div>
+                    <div class="info-value">21.03.2026</div>
+                </div>
+                <div class="info-row">
+                    <div class="info-label">Откуда</div>
+                    <div class="info-value"><strong>КОЧЕНЕВО</strong></div>
+                </div>
+                <div class="info-row">
+                    <div class="info-label">Куда</div>
+                    <div class="info-value"><strong>ПЛП (3307 км)</strong></div>
+                </div>
+                <div class="info-row">
+                    <div class="info-label">Поезд</div>
+                    <div class="info-value">№ <strong>6334 / 07:02</strong></div>
+                </div>
+                <div class="info-row">
+                    <div class="info-label">Тариф</div>
+                    <div class="info-value"><strong>Полный - 52.00</strong></div>
+                </div>
+            </div>
+
+            <!-- Предупреждение -->
+            <div class="warning-message">
+                <span class="warning-icon">⚠️</span> Билет ещё не действует
+            </div>
+
+            <!-- Кнопка закрытия -->
+            <button class="close-button" onclick="closeApp()">ЗАКРЫТЬ</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
